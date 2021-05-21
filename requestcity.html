@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Request City</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@300&display=swap">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="icon" href="logo.png" type="image/png" sizes="16x16">
+<style>
+    body {
+      font-family: 'Noto Sans JP', sans-serif;  }
+      div.a {
+    font-size: 17px;
+  }
+  
+  
+    </style>
+</head>
+<body>
+    
+
+<!-- Start Contact Section -->
+ <div class="w3-container w3-light-grey w3-padding-32 w3-padding-large" id="contact">
+    <h3 class="w3-center"><b>Request Your City </b></h3>
+    <h5 class="text-align:center;"><p>We are adding new cities daily and would love to deliver meals in your city too 😊</p></h5>
+      <h6 class="text-align:center;"><p>Just wait for a while and if you need any URGENT help please contact us at - <a href="mailto:covifoodfree@gmail.com">covifoodfree@gmail.com</a></p></h6>
+  </a></p></h5>
+  <p> <b>Just Fill The Form Below And We will contact you whenever your city is added 👇</b></p>
+
+    <script type="text/javascript">var submitted=false;</script>
+    
+    <!--Update the URL for thank you page on form submit -->
+    <iframe name="hidden_iframe" id="hidden_iframe" style="display:none;"      
+    onload="if(submitted) {window.location='https://covidmeal.netlify.app/thankyou.html';}"></iframe> 
+    
+    <!-- Update the Google forms URL in action-->
+    <form action="https://docs.google.com/forms/u/1/d/e/1FAIpQLSfFtLvoH9ufYaOMUtuh2xOIpsc02lfeKgsPXVeOXusTSd2E8w/formResponse" method="post" target="hidden_iframe" onsubmit="return validateForm(); ">
+
+      
+      <div class="w3-section">
+        <label>Your Name</label>
+        <input class="w3-input w3-border" type="text" placeholder="Name" id="Your Name" required name="entry.1846625501">
+      </div>
+     
+     
+      <div class="w3-section">
+        <label>Your Phone No.</label>
+        <input class="w3-input w3-border" type="text" placeholder="Phone" id="your contact number" required name="entry.252742656">
+      </div>
+      
+      
+      
+      <div class="w3-section">
+        <label>Your State and City Name</label>
+        <input class="w3-input w3-border" type="text" placeholder="Your State and City" id="State and City Name" required name="entry.1413334344">
+      </div>
+      
+    
+      <div class="w3-section">
+        <button class="w3-button w3-block w3-black w3-margin-bottom" type="submit"> SUBMIT</button>
+      </div>
+    </form>
+    
+</div>
+</div>
+<br>
+    <p><b>Contact Us</b></p>
+    <a href="https://www.linkedin.com/in/rohit-soni-7410681aa/">Rohit Soni</a>
+    <br>
+    <a href="https://www.linkedin.com/in/rashmi-bisht-a76bb6145/">Rashmi Bisht</a>
+    <br>
+   
+
+    <script type="text/javascript">
+        function validateName() {
+                var name = document.getElementById('Your Name').value;
+                if(name.length == 0) {
+                  alert("Name can't be blank") ;
+                  return false;
+    
+                }
+                if (!name.match(/^[a-zA-Z]{3,}(?: [a-zA-Z]+){0,2}$/)) {
+                  alert("Please enter your correct name") ;//Validation Message
+                  return false;
+                }
+                return true;
+              }
+    
+              function validatePhone() {
+                var phone = document.getElementById('your contact number').value;
+                if(phone.length == 0) {
+                  alert("Phone number can't be blank") ;//Validation Message
+                  return false;
+                }
+    
+                if(!phone.match(/^[0]?[789]\d{9}$/)) {
+                 alert("Please enter a correct phone number") ;//Validation Message
+                 return false;
+               }
+    
+               return true;
+    
+             }
+    
+             
+    
+            function validateForm() {
+              if (!validateName() || !validatePhone()) {
+    
+                alert("Form not submitted");//Validation Message
+                return false;
+              }
+              else {
+                submitted=true;
+                return true;
+              }
+            }
+            </script>
+    
+<!-- End Contact Section -->
+            
+</body>
+</html>
+
+
+
